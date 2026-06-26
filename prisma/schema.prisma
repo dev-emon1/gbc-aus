@@ -1,0 +1,203 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../lib/generated/prisma"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+enum UserRole {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+}
+
+enum Status {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+enum MediaType {
+  IMAGE
+  VIDEO
+}
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+
+  role      UserRole @default(EDITOR)
+
+  isActive  Boolean  @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model HeroSlide {
+  id          String   @id @default(cuid())
+
+  title       String
+  subtitle    String?
+
+  image       String
+
+  buttonText  String?
+  buttonLink  String?
+
+  sortOrder   Int      @default(0)
+
+  isActive    Boolean  @default(true)
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model CourseCategory {
+  id          String   @id @default(cuid())
+
+  name        String
+  slug        String   @unique
+
+  description String?
+
+  courses     Course[]
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Course {
+  id              String   @id @default(cuid())
+
+  categoryId      String
+
+  category        CourseCategory @relation(fields: [categoryId], references: [id])
+
+  title           String
+  slug            String   @unique
+
+  overview        String   @db.LongText
+
+  duration        String?
+  tuitionFee      String?
+  studyMode       String?
+
+  thumbnail       String?
+
+  status          Status   @default(DRAFT)
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Testimonial {
+  id            String   @id @default(cuid())
+
+  studentName   String
+
+  country       String?
+
+  review        String   @db.Text
+
+  image         String?
+
+  videoUrl      String?
+
+  isFeatured    Boolean  @default(false)
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model News {
+  id            String   @id @default(cuid())
+
+  title         String
+  slug          String   @unique
+
+  excerpt       String?
+
+  content       String   @db.LongText
+
+  thumbnail     String?
+
+  status        Status   @default(DRAFT)
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Event {
+  id            String   @id @default(cuid())
+
+  title         String
+
+  slug          String   @unique
+
+  description   String   @db.LongText
+
+  location      String?
+
+  eventDate     DateTime
+
+  thumbnail     String?
+
+  status        Status   @default(DRAFT)
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Gallery {
+  id            String    @id @default(cuid())
+
+  title         String?
+
+  type          MediaType
+
+  fileUrl       String
+
+  createdAt     DateTime @default(now())
+}
+
+model Inquiry {
+  id            String   @id @default(cuid())
+
+  name          String
+
+  email         String
+
+  phone         String?
+
+  message       String   @db.Text
+
+  createdAt     DateTime @default(now())
+}
+
+model SiteSetting {
+  id            String   @id @default(cuid())
+
+  siteName      String
+
+  email         String?
+
+  phone         String?
+
+  address       String?
+
+  facebook      String?
+  instagram     String?
+  linkedin      String?
+
+  updatedAt     DateTime @updatedAt
+}

@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+
+  --color-brand: #d84d95;
+  --color-brand-secondary: #b7d531;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+
+  --card: #ffffff;
+  --card-foreground: #111827;
+
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+
+  --primary: #d84d95;
+  --primary-foreground: #ffffff;
+
+  --secondary: #b7d531;
+  --secondary-foreground: #ffffff;
+
+  --muted: #f8fafc;
+  --muted-foreground: #64748b;
+
+  --accent: #f8fafc;
+  --accent-foreground: #111827;
+
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #d84d95;
+
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-custom {
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.section-padding {
+  padding-block: 96px;
+}
