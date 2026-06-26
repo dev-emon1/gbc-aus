@@ -1,27 +1,27 @@
 import AboutHero from "@/features/about/components/AboutHero";
-import WelcomeSection from "@/features/about/components/WelcomeSection";
+import AcknowledgementSection from "@/features/about/components/AcknowledgementSection";
+import CollegeOverviewSection from "@/features/about/components/CollegeOverviewSection";
 import HistorySection from "@/features/about/components/HistorySection";
-import ServicesSection from "@/features/about/components/ServicesSection";
-import AdvantagesSection from "@/features/about/components/AdvantagesSection";
-import VisionMissionSection from "@/features/about/components/VisionMissionSection";
-import AboutCTA from "@/features/about/components/AboutCTA";
+import WhatWeDoSection from "@/features/about/components/WhatWeDoSection";
 
 export default function AboutPage() {
   return (
     <>
       <AboutHero />
 
-      <WelcomeSection />
+      <CollegeOverviewSection />
+
+      <AcknowledgementSection />
 
       <HistorySection />
 
-      <ServicesSection />
+      <WhatWeDoSection />
 
-      <AdvantagesSection />
+      {/* <AdvantagesSection /> */}
 
-      <VisionMissionSection />
+      {/* <VisionMissionSection /> */}
 
-      <AboutCTA />
+      {/* <AboutCTA /> */}
     </>
   );
 }
