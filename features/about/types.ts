@@ -48,7 +48,7 @@ export interface WhatWeDoData {
 
 export interface VisionMissionCard {
   title: string;
-  description: string;
+  description: string | string[];
 }
 
 export interface VisionMissionData {

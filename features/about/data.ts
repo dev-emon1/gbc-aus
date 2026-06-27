@@ -165,25 +165,28 @@ export const ABOUT_DATA: AboutData = {
   },
 
   visionMission: {
-    badge: "Vision & Mission",
+    badge: "VISION & MISSION",
 
-    title: "Our Purpose. Our Commitment.",
+    title: "Guided by Purpose. Driven by Student Success.",
 
     description:
-      "Everything we do is guided by quality education, student success and lifelong learning.",
+      "Everything we do at George Brown College is guided by a commitment to quality education, student success and a supportive learning environment.",
 
     vision: {
-      title: "Vision",
+      title: "Our Vision",
 
       description:
-        "To be recognised as a trusted provider of high-quality education, empowering students to achieve their personal and professional goals.",
+        "George Brown College aims to work towards always being recognised as a leader in the delivery of high-quality educational services to both students from the local community and overseas students choosing to study in Australia.",
     },
 
     mission: {
-      title: "Mission",
+      title: "Our Mission",
 
-      description:
-        "To deliver practical, industry-focused education through academic excellence, experienced educators and dedicated student support.",
+      description: [
+        "George Brown College will endeavour at all times to deliver quality educational services to its students through dedicated and caring academic and support staff who genuinely strive to provide the expertise needed for every student to achieve the best possible results.",
+
+        "The College will at all times provide a safe and friendly centre of learning that encourages everyone to grow in a supportive and encouraging environment.",
+      ],
     },
   },
 

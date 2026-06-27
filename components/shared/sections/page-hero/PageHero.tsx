@@ -9,7 +9,7 @@ import { PageHeroProps } from "./types";
 export default function PageHero({ data }: PageHeroProps) {
   return (
     <section className="relative overflow-hidden bg-slate-950">
-      <div className="relative h-[430px] overflow-hidden lg:h-[460px]">
+      <div className="relative overflow-hidden py-20 lg:py-28">
         {/* Background Image */}
 
         <Image

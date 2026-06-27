@@ -54,7 +54,7 @@ export const navigation: NavigationItem[] = [
 
       {
         label: "Why Choose GBC",
-        href: "/why-gbc",
+        href: "/why-choose-gbc",
         badge: "Popular",
       },
 
