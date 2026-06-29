@@ -5,7 +5,8 @@ import TrustStrip from "@/features/home/components/TrustStrip";
 import WhyChooseGBC from "@/features/home/components/why-gbc/WhyChooseGBC";
 import FinalCTASection from "@/features/home/components/cta/FinalCTASection";
 import ResourcesSection from "@/features/home/components/resources/ResourcesSection";
-import StudentSuccessSection from "@/features/home/components/student-success/StudentSuccessSection";
+import { HOME_TESTIMONIALS } from "@/features/home/components/student-success/home-testimonials";
+import { TestimonialsSection } from "@/components/shared/sections/testimonials";
 
 export default function HomePage() {
   return (
@@ -20,7 +21,9 @@ export default function HomePage() {
 
       <CampusExperience />
 
-      <StudentSuccessSection />
+      {/* <StudentSuccessSection /> */}
+
+      <TestimonialsSection variant="home" data={HOME_TESTIMONIALS} />
 
       <ResourcesSection />
 

@@ -1,6 +1,6 @@
-import WhyChooseCTA from "@/features/why-choose-gbc/components/WhyChooseCTA";
-import WhyChooseHero from "@/features/why-choose-gbc/components/WhyChooseHero";
-import WhyChooseSection from "@/features/why-choose-gbc/components/WhyChooseSection";
+import WhyChooseCTA from "@/features/about-gbc/why-choose-gbc/components/WhyChooseCTA";
+import WhyChooseHero from "@/features/about-gbc/why-choose-gbc/components/WhyChooseHero";
+import WhyChooseSection from "@/features/about-gbc/why-choose-gbc/components/WhyChooseSection";
 
 const WhyChooseGBCPage = () => {
   return (
