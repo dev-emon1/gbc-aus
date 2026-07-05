@@ -8,7 +8,17 @@ import NavigationMenu from "./NavigationMenu";
 
 export default function NavMenu() {
   return (
-    <nav className="hidden lg:flex items-center gap-8 xl:gap-10">
+    <nav
+      className="
+    hidden
+    lg:flex
+    items-center
+
+    gap-5
+    xl:gap-7
+    2xl:gap-10
+  "
+    >
       {navigation.map((item) => {
         const hasDropdown = item.dropdown || item.megaMenu;
 

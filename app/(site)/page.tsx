@@ -21,8 +21,6 @@ export default function HomePage() {
 
       <CampusExperience />
 
-      {/* <StudentSuccessSection /> */}
-
       <TestimonialsSection variant="home" data={HOME_TESTIMONIALS} />
 
       <ResourcesSection />
