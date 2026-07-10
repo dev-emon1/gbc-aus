@@ -4,8 +4,10 @@ export interface BreadcrumbItem {
 }
 
 export interface PageHeroData {
-  badge: string;
+  badge?: string;
+
   title: string;
+
   description: string;
 
   backgroundImage: string;
@@ -13,6 +15,20 @@ export interface PageHeroData {
   breadcrumbs: BreadcrumbItem[];
 
   metadata?: HeroMetaItem[];
+
+  member?: number;
+
+  primaryButton?: {
+    label: string;
+    href: string;
+  };
+
+  secondaryButton?: {
+    label: string;
+    href: string;
+  };
+
+  height?: "sm" | "md" | "lg";
 }
 
 export interface PageHeroProps {

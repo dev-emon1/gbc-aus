@@ -7,7 +7,7 @@ const sortedCourses = [...COURSE_NAVIGATION].sort((a, b) =>
   a.title.localeCompare(b.title),
 );
 
-const rows = [];
+const rows: any = [];
 
 for (let i = 0; i < sortedCourses.length; i += 2) {
   rows.push(sortedCourses.slice(i, i + 2));

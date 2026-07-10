@@ -37,6 +37,77 @@ export const COURSES_DATA: CoursesData = {
     ],
   },
 
+  featuredPrograms: {
+    badge: "FEATURED PROGRAMS",
+
+    title: "Popular Programs",
+
+    description:
+      "Discover some of our most in-demand qualifications designed for international students.",
+
+    button: {
+      label: "View All Courses",
+
+      href: "/courses",
+    },
+
+    items: [
+      {
+        id: "aur30620",
+
+        title: "Light Vehicle Mechanical Technology",
+
+        slug: "/courses/automotive-management/certificate-iii-light-vehicle-mechanical-technology",
+
+        image: "/images/courses/featured/automotive.jpg",
+
+        badge: "Automotive",
+
+        code: "AUR30620",
+
+        level: "Certificate III",
+
+        duration: "78 Weeks",
+      },
+
+      {
+        id: "bsb50120",
+
+        title: "Diploma of Business",
+
+        slug: "/courses/business/diploma-business",
+
+        image: "/images/courses/featured/business.jpg",
+
+        badge: "Business",
+
+        code: "BSB50120",
+
+        level: "Diploma",
+
+        duration: "52 Weeks",
+      },
+
+      {
+        id: "ict50220",
+
+        title: "Diploma of Information Technology",
+
+        slug: "/courses/information-technology/diploma-information-technology",
+
+        image: "/images/courses/featured/it.jpg",
+
+        badge: "Information Technology",
+
+        code: "ICT50220",
+
+        level: "Diploma",
+
+        duration: "104 Weeks",
+      },
+    ],
+  },
+
   studyAreas: {
     badge: "STUDY AREAS",
 
@@ -44,290 +115,6 @@ export const COURSES_DATA: CoursesData = {
 
     description:
       "Browse our nationally recognised study areas and discover qualifications designed for your future career.",
-
-    items: [
-      {
-        id: "automotive",
-
-        title: "Automotive Management",
-
-        slug: "automotive-management",
-
-        image: "/images/courses/automotive.jpg",
-
-        description:
-          "Industry focused automotive mechanical technology qualifications.",
-
-        featured: true,
-
-        programs: [
-          {
-            id: "aur30620",
-
-            title: "Certificate III in Light Vehicle Mechanical Technology",
-
-            slug: "certificate-iii-light-vehicle-mechanical-technology",
-
-            qualification: "Certificate III",
-
-            courseCode: "AUR30620",
-
-            cricosCode: "XXXXXX",
-
-            overview:
-              "This qualification reflects the role of individuals who perform a broad range of tasks on a variety of light vehicles in the automotive retail, service and repair industry.",
-
-            sidebar: {
-              brochure: "/brochure/aur30620.pdf",
-
-              pathway: "/pathway/automotive.pdf",
-
-              courseCode: "AUR30620",
-
-              cricosCode: "XXXXXX",
-
-              tuition: "$20,000",
-
-              duration: "104 Weeks",
-
-              studyMode: "Face to Face",
-
-              intake: ["January", "April", "July", "October"],
-
-              location: "Sydney",
-            },
-
-            entryRequirements: {
-              title: "Who Can Enrol?",
-
-              content: [
-                "Must be at least 18 years old.",
-
-                "Successful completion of Year 12 or equivalent.",
-
-                "IELTS 6.0 overall or equivalent English proficiency.",
-              ],
-            },
-
-            learningOutcomes: {
-              title: "Key Study Outcomes",
-
-              content: [
-                "Diagnose mechanical faults.",
-
-                "Repair light vehicle systems.",
-
-                "Perform servicing and maintenance.",
-
-                "Develop workplace communication skills.",
-              ],
-            },
-
-            careerOutcomes: {
-              title: "Ideal For",
-
-              content: [
-                "Automotive Technician",
-
-                "Workshop Mechanic",
-
-                "Light Vehicle Technician",
-
-                "Mechanical Service Advisor",
-              ],
-            },
-
-            assessment: {
-              title: "Assessment",
-
-              content: [
-                "Written Assessments",
-
-                "Practical Demonstrations",
-
-                "Projects",
-
-                "Portfolio",
-
-                "Workplace Observation",
-              ],
-            },
-
-            fees: {
-              title: "Fees",
-
-              content: [
-                "Refer to the official Offer Letter for complete fee information.",
-              ],
-            },
-
-            subjects: [
-              {
-                code: "AURASA002",
-
-                title:
-                  "Follow safe working practices in an automotive workplace",
-              },
-
-              {
-                code: "AURETR012",
-
-                title: "Test and repair basic electrical circuits",
-              },
-
-              {
-                code: "AURETR123",
-
-                title:
-                  "Diagnose and repair spark ignition engine management systems",
-              },
-
-              {
-                code: "AURTTK001",
-
-                title: "Use and maintain measuring equipment",
-              },
-            ],
-          },
-
-          {
-            id: "aur40216",
-
-            title: "Certificate IV in Automotive Mechanical Diagnosis",
-
-            slug: "certificate-iv-automotive-mechanical-diagnosis",
-
-            qualification: "Certificate IV",
-
-            courseCode: "AUR40216",
-
-            cricosCode: "",
-
-            overview: "",
-
-            sidebar: {
-              brochure: "",
-
-              pathway: "",
-
-              courseCode: "",
-
-              cricosCode: "",
-
-              tuition: "",
-
-              duration: "",
-
-              studyMode: "",
-
-              intake: [],
-
-              location: "",
-            },
-
-            entryRequirements: {
-              title: "",
-
-              content: [],
-            },
-
-            learningOutcomes: {
-              title: "",
-
-              content: [],
-            },
-
-            careerOutcomes: {
-              title: "",
-
-              content: [],
-            },
-
-            assessment: {
-              title: "",
-
-              content: [],
-            },
-
-            fees: {
-              title: "",
-
-              content: [],
-            },
-
-            subjects: [],
-          },
-
-          {
-            id: "aur50216",
-
-            title: "Diploma of Automotive Technology",
-
-            slug: "diploma-of-automotive-technology",
-
-            qualification: "Diploma",
-
-            courseCode: "AUR50216",
-
-            cricosCode: "",
-
-            overview: "",
-
-            sidebar: {
-              brochure: "",
-
-              pathway: "",
-
-              courseCode: "",
-
-              cricosCode: "",
-
-              tuition: "",
-
-              duration: "",
-
-              studyMode: "",
-
-              intake: [],
-
-              location: "",
-            },
-
-            entryRequirements: {
-              title: "",
-
-              content: [],
-            },
-
-            learningOutcomes: {
-              title: "",
-
-              content: [],
-            },
-
-            careerOutcomes: {
-              title: "",
-
-              content: [],
-            },
-
-            assessment: {
-              title: "",
-
-              content: [],
-            },
-
-            fees: {
-              title: "",
-
-              content: [],
-            },
-
-            subjects: [],
-          },
-        ],
-      },
-    ],
   },
 
   whyChoose: {
@@ -362,6 +149,43 @@ export const COURSES_DATA: CoursesData = {
         title: "Student Support",
 
         description: "Academic and personal support throughout your studies.",
+      },
+    ],
+  },
+
+  learningPathway: {
+    badge: "LEARNING PATHWAY",
+
+    title: "Your Journey Starts Here",
+
+    description:
+      "Progress from entry-level qualifications to advanced programs and build a successful career in Australia.",
+
+    items: [
+      {
+        title: "Choose Your Study Area",
+
+        description: "Select the industry that matches your career goals.",
+      },
+
+      {
+        title: "Complete Your Qualification",
+
+        description:
+          "Develop practical skills through nationally recognised training.",
+      },
+
+      {
+        title: "Build Industry Experience",
+
+        description: "Gain job-ready knowledge through practical learning.",
+      },
+
+      {
+        title: "Launch Your Career",
+
+        description:
+          "Graduate with qualifications recognised across Australia.",
       },
     ],
   },

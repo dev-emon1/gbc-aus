@@ -7,9 +7,21 @@ import PageHeroBreadcrumb from "./PageHeroBreadcrumb";
 import { PageHeroProps } from "./types";
 
 export default function PageHero({ data }: PageHeroProps) {
+  const HEIGHT = {
+    sm: "py-16 lg:py-20",
+    md: "py-20 lg:py-28",
+    lg: "py-24 lg:py-36",
+  };
+
   return (
     <section className="relative overflow-hidden bg-slate-950">
-      <div className="relative overflow-hidden py-20 lg:py-28">
+      <div
+        className={`
+        relative
+        overflow-hidden
+        ${HEIGHT[data.height ?? "md"]}
+    `}
+      >
         {/* Background Image */}
 
         <Image
@@ -49,11 +61,31 @@ export default function PageHero({ data }: PageHeroProps) {
               <PageHeroBreadcrumb breadcrumbs={data.breadcrumbs} />
             </MotionReveal>
 
-            <MotionReveal delay={0.08}>
-              <span className="mt-8 inline-flex items-center rounded-full border border-white/15 bg-white/10 px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-white backdrop-blur-xl">
-                {data.badge}
-              </span>
-            </MotionReveal>
+            {data.badge && (
+              <MotionReveal delay={0.08}>
+                <span
+                  className="
+        mt-8
+        inline-flex
+        items-center
+        rounded-full
+        border
+        border-white/15
+        bg-white/10
+        px-5
+        py-2.5
+        text-[11px]
+        font-semibold
+        uppercase
+        tracking-[0.22em]
+        text-white
+        backdrop-blur-xl
+      "
+                >
+                  {data.badge}
+                </span>
+              </MotionReveal>
+            )}
 
             <MotionReveal delay={0.16}>
               <h1 className="mt-7 text-5xl font-bold leading-[1.05] text-white md:text-6xl xl:text-[68px]">
