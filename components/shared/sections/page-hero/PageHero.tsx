@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { MotionReveal } from "@/components/shared/animations";
 import { CONTAINER } from "@/constants/layout";
@@ -56,7 +57,13 @@ export default function PageHero({ data }: PageHeroProps) {
         {/* Content */}
 
         <div className={`${CONTAINER} relative z-20 flex h-full items-center`}>
-          <div className="max-w-xl">
+          <div
+            className={
+              data.contentAlign === "center"
+                ? "mx-auto max-w-3xl text-center"
+                : "max-w-3xl"
+            }
+          >
             <MotionReveal>
               <PageHeroBreadcrumb breadcrumbs={data.breadcrumbs} />
             </MotionReveal>
@@ -124,6 +131,70 @@ export default function PageHero({ data }: PageHeroProps) {
                 ))}
               </div>
             </MotionReveal>
+
+            {(data.primaryButton || data.secondaryButton) && (
+              <MotionReveal delay={0.4}>
+                <div
+                  className={`mt-12 flex flex-wrap gap-4 ${
+                    data.contentAlign === "center"
+                      ? "justify-center"
+                      : "justify-start"
+                  }`}
+                >
+                  {data.primaryButton && (
+                    <Link
+                      href={data.primaryButton.href}
+                      className="
+            inline-flex
+            items-center
+            justify-center
+            rounded-full
+            bg-[#D84D95]
+            px-8
+            py-4
+            text-sm
+            font-semibold
+            text-white
+            transition-all
+            duration-300
+            hover:-translate-y-1
+            hover:bg-[#c73d86]
+            hover:shadow-[0_20px_45px_rgba(216,77,149,.35)]
+          "
+                    >
+                      {data.primaryButton.label}
+                    </Link>
+                  )}
+
+                  {data.secondaryButton && (
+                    <Link
+                      href={data.secondaryButton.href}
+                      className="
+            inline-flex
+            items-center
+            justify-center
+            rounded-full
+            border
+            border-white/20
+            bg-white/10
+            px-8
+            py-4
+            text-sm
+            font-semibold
+            text-white
+            backdrop-blur-xl
+            transition-all
+            duration-300
+            hover:border-[#B7D531]
+            hover:bg-white/15
+          "
+                    >
+                      {data.secondaryButton.label}
+                    </Link>
+                  )}
+                </div>
+              </MotionReveal>
+            )}
           </div>
         </div>
 

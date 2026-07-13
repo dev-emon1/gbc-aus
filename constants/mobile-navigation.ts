@@ -16,10 +16,18 @@ export const mobileNavigation = [
   {
     label: "Life In Australia",
     items: [
-      { label: "Study in Australia", href: "/study-in-australia" },
-      { label: "Accommodation", href: "/accommodation" },
-      { label: "Cost of Living", href: "/cost-of-living" },
-      { label: "Student Guide", href: "/student-guide" },
+      {
+        label: "Study In Australia",
+        href: "/life-in-australia/study-in-australia",
+      },
+      {
+        label: "Articulation",
+        href: "/life-in-australia/articulation",
+      },
+      {
+        label: "Cost Of Living",
+        href: "/life-in-australia/cost-of-living",
+      },
     ],
   },
   {
@@ -33,10 +41,34 @@ export const mobileNavigation = [
   {
     label: "Student Life",
     items: [
-      { label: "Student Services", href: "/student-services" },
-      { label: "Events & Workshops", href: "/events" },
-      { label: "Meet an Advisor", href: "/meet-an-advisor" },
-      { label: "Support & Welfare", href: "/support" },
+      {
+        label: "Student Services",
+        href: "/student-life/student-services",
+      },
+      {
+        label: "Orientation",
+        href: "/student-life/orientation",
+      },
+      {
+        label: "Support & Welfare",
+        href: "/student-life/support-welfare",
+      },
+      {
+        label: "Safety",
+        href: "/student-life/safety",
+      },
+      {
+        label: "Meet an Advisor",
+        href: "/meet-an-advisor",
+      },
+      {
+        label: "Events & Workshops",
+        href: "/student-life/events",
+      },
+      {
+        label: "Student Guide",
+        href: "/student-life/student-guide",
+      },
     ],
   },
   {

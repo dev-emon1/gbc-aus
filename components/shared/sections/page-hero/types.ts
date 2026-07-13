@@ -29,6 +29,10 @@ export interface PageHeroData {
   };
 
   height?: "sm" | "md" | "lg";
+
+  contentAlign?: "left" | "center";
+
+  showButtons?: boolean;
 }
 
 export interface PageHeroProps {

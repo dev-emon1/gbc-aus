@@ -7,9 +7,15 @@ export type CourseLevel =
   | "Certificate IV"
   | "Diploma"
   | "Advanced Diploma"
-  | "General English";
+  | "General English"
+  | "Graduate Diploma";
 
-export type StudyMode = "Face to Face" | "Virtual" | "Face to Face & Virtual";
+export type StudyMode =
+  | "Face to Face"
+  | "Virtual"
+  | "Face to Face & Virtual"
+  | "Face to Face & Online"
+  | "Face to Face Classroom & Workshop Delivery";
 
 export type StudyAreaOverview = {
   title: string;

@@ -7,3 +7,4 @@ export { default as StudyAreaFilter } from "./StudyAreaFilter";
 export { default as LevelFilter } from "./LevelFilter";
 
 export { default as CampusFilter } from "./CampusFilter";
+export { default as SidebarSection } from "./SidebarSection";

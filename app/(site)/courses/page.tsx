@@ -9,11 +9,13 @@ import { CourseSidebar } from "@/features/courses/components/sidebar";
 import { CourseTopbar } from "@/features/courses/components/topbar";
 import { STUDY_AREAS } from "@/features/courses/data/index";
 import { StudyArea } from "@/features/courses/types";
+import { StudyAreaList } from "@/features/courses/components/lists";
 
 export default function CoursesPage() {
   const [search, setSearch] = useState("");
 
   const [sortBy, setSortBy] = useState("featured");
+  const [view, setView] = useState<"grid" | "list">("grid");
 
   const filteredStudyAreas = useMemo(() => {
     let items: StudyArea[] = [...STUDY_AREAS];
@@ -60,6 +62,8 @@ export default function CoursesPage() {
             total={filteredStudyAreas.length}
             sortBy={sortBy}
             onSortChange={setSortBy}
+            view={view}
+            onViewChange={setView}
           />
         }
         sidebar={
@@ -70,7 +74,11 @@ export default function CoursesPage() {
           />
         }
       >
-        <StudyAreaGrid studyAreas={filteredStudyAreas} />
+        {view === "grid" ? (
+          <StudyAreaGrid studyAreas={filteredStudyAreas} />
+        ) : (
+          <StudyAreaList studyAreas={filteredStudyAreas} />
+        )}
       </CoursesLayout>
     </>
   );

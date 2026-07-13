@@ -22,14 +22,14 @@ const courses = [
     duration: "52 Weeks",
     category: "Management",
     image: "/images/courses/hrm.jpg",
-    href: "/courses/human-resource-management",
+    href: "/courses/human-resources",
   },
   {
     title: "Business Management",
     duration: "52 Weeks",
     category: "Business",
     image: "/images/courses/business.jpg",
-    href: "/courses/business-management",
+    href: "/courses/business",
   },
 ];
 

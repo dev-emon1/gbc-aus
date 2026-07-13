@@ -90,39 +90,33 @@ export const navigation: NavigationItem[] = [
 
     title: "Life In Australia",
 
-    description: "Everything you need before starting your study journey.",
+    description:
+      "Everything you need to know before and after arriving in Australia.",
 
-    ctaButton: "Student Guide",
+    ctaButton: "Articulation Guide",
 
-    ctaHref: "/student-guide",
+    ctaHref: "/life-in-australia/articulation",
 
     ctaTitle: "Prepare Before You Arrive",
 
-    ctaDescription: "Helpful resources for international students.",
+    ctaDescription:
+      "Discover articulation, living costs and essential information for international students.",
 
     children: [
       {
         label: "Study In Australia",
-
-        href: "/study-in-australia",
+        href: "/life-in-australia/study-in-australia",
       },
 
       {
-        label: "Accommodation",
-
-        href: "/accommodation",
+        label: "Articulation",
+        href: "/life-in-australia/articulation",
+        badge: "Guide",
       },
 
       {
         label: "Cost Of Living",
-
-        href: "/cost-of-living",
-      },
-
-      {
-        label: "Student Guide",
-
-        href: "/student-guide",
+        href: "/life-in-australia/cost-of-living",
       },
     ],
   },
@@ -177,40 +171,48 @@ export const navigation: NavigationItem[] = [
     title: "Student Life",
 
     description:
-      "Support services, events and everything beyond the classroom.",
+      "Everything beyond the classroom to help you succeed and enjoy your student journey.",
 
     ctaButton: "Student Services",
 
-    ctaHref: "/student-services",
+    ctaHref: "/student-life/student-services",
 
-    ctaTitle: "Student Support",
+    ctaTitle: "Support Throughout Your Journey",
 
     ctaDescription:
-      "From wellbeing to career advice, we're here throughout your journey.",
+      "Academic support, wellbeing services, orientation and student resources all in one place.",
 
     children: [
       {
         label: "Student Services",
-
-        href: "/student-services",
+        href: "/student-life/student-services",
       },
 
       {
-        label: "Events & Workshops",
-
-        href: "/events",
-      },
-
-      {
-        label: "Meet an Advisor",
-
-        href: "/meet-an-advisor",
+        label: "Orientation",
+        href: "/student-life/orientation",
+        badge: "New",
       },
 
       {
         label: "Support & Welfare",
+        href: "/student-life/support-welfare",
+      },
 
-        href: "/support",
+      {
+        label: "Safety",
+        href: "/student-life/safety",
+      },
+
+      {
+        label: "Events & Workshops",
+        href: "/student-life/event-workshops",
+      },
+
+      {
+        label: "Student Guide",
+        href: "/student-life/student-guide",
+        badge: "Popular",
       },
     ],
   },

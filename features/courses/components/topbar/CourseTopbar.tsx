@@ -4,36 +4,33 @@ type CourseTopbarProps = {
   total: number;
   sortBy: string;
   onSortChange: (value: string) => void;
+  view: "grid" | "list";
+  onViewChange: (view: "grid" | "list") => void;
 };
 
 export default function CourseTopbar({
   total,
   sortBy,
   onSortChange,
+  view,
+  onViewChange,
 }: CourseTopbarProps) {
   return (
-    <div
-      className="
-        flex
-        flex-col
-        gap-4
-        rounded-2xl
-        border
-        border-gray-200
-        bg-white
-        p-4
+    <div className="rounded-[28px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300">
+      <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+        {/* Left */}
 
-        lg:flex-row
-        lg:items-center
-        lg:justify-between
-      "
-    >
-      <ResultCount total={total} />
+        <ResultCount total={total} />
 
-      <div className="flex items-center gap-3">
-        <SortSelect value={sortBy} onChange={onSortChange} />
+        {/* Right */}
 
-        <ViewToggle />
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+          <SortSelect value={sortBy} onChange={onSortChange} />
+
+          <div className="h-10 w-px bg-slate-200 hidden sm:block" />
+
+          <ViewToggle view={view} onChange={onViewChange} />
+        </div>
       </div>
     </div>
   );

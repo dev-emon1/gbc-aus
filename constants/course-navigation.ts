@@ -23,7 +23,7 @@ export const COURSE_NAVIGATION: CourseNavigationItem[] = [
   {
     id: "leadership-management",
     title: "Leadership and Management",
-    slug: "leadership-management",
+    slug: "leadership-and-management",
     programCount: 2,
   },
 
@@ -58,7 +58,7 @@ export const COURSE_NAVIGATION: CourseNavigationItem[] = [
   {
     id: "health-care",
     title: "Health and Care",
-    slug: "health-care",
+    slug: "health-and-care",
     programCount: 2,
   },
 
@@ -93,7 +93,7 @@ export const COURSE_NAVIGATION: CourseNavigationItem[] = [
   {
     id: "glamour-beauty",
     title: "Glamour Beauty Academy",
-    slug: "glamour-beauty",
+    slug: "glamour-beauty-academy",
     programCount: 2,
   },
 

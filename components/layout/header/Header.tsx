@@ -36,7 +36,7 @@ export default function Header() {
 
             {/* Actions */}
             <div className="hidden lg:flex items-center gap-4">
-              <LanguageSwitcher />
+              {/* <LanguageSwitcher /> */}
               <InquiryButton />
             </div>
 
