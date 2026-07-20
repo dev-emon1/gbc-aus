@@ -1,4 +1,4 @@
-import { PageHeroData } from "@/components/shared/page-hero/types";
+import { PageHeroData } from "@/components/shared/sections/page-hero/types";
 
 export interface OverviewStat {
   label: string;
