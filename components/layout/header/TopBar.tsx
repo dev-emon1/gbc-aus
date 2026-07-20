@@ -67,7 +67,7 @@ xl:h-4 xl:w-4"
             </Link>
 
             <Link
-              href="https://rtomanager.example.com"
+              href="https://gbc.rtomanager.com.au/"
               target="_blank"
               className="
                 inline-flex
@@ -90,7 +90,8 @@ xl:h-4 xl:w-4"
             </Link>
 
             <Link
-              href="/e-learning"
+              href="https://elearning.georgebrown.nsw.edu.au/"
+              target="_blank"
               className="
                 inline-flex
                 h-8
