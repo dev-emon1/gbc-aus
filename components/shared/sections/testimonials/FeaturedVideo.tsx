@@ -45,7 +45,7 @@ export default function FeaturedVideo({
                 width: "100%",
                 height: "100%",
                 playerVars: {
-                  autoplay: 1,
+                  autoplay: 0,
                   rel: 0,
                   modestbranding: 1,
                 },
