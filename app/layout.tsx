@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 
+import ScrollToTop from "@/components/shared/ScrollToTop";
+
 import "./globals.css";
 
 import Header from "@/components/layout/header/Header";
@@ -33,7 +35,7 @@ export default function RootLayout({
         <Header />
 
         <main className="flex-1">{children}</main>
-
+        <ScrollToTop />
         <Footer />
       </body>
     </html>
