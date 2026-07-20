@@ -147,7 +147,10 @@ export default function MobileMenu() {
                             >
                               {subItem.label}
 
-                              <ChevronRight className="h-4 w-4" />
+                              <ChevronRight
+                                className="h-3.5 w-3.5
+xl:h-4 xl:w-4"
+                              />
                             </Link>
                           ))}
                         </div>
@@ -187,7 +190,10 @@ export default function MobileMenu() {
                   >
                     {item.label}
 
-                    <ChevronRight className="h-4 w-4" />
+                    <ChevronRight
+                      className="h-3.5 w-3.5
+xl:h-4 xl:w-4"
+                    />
                   </Link>
                 );
               })}
@@ -236,7 +242,10 @@ export default function MobileMenu() {
               >
                 <span>🇬🇧 English</span>
 
-                <ChevronRight className="h-4 w-4" />
+                <ChevronRight
+                  className="h-3.5 w-3.5
+xl:h-4 xl:w-4"
+                />
               </button>
             </div>
 

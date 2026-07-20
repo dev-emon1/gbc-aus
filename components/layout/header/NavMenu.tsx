@@ -10,20 +10,17 @@ export default function NavMenu() {
   return (
     <nav
       className="
-    hidden
-    lg:flex
-    items-center
-
-    gap-5
-    xl:gap-7
-    2xl:gap-10
-  "
+        hidden
+        lg:flex
+        min-w-0
+        items-center
+      "
     >
       {navigation.map((item) => {
         const hasDropdown = item.dropdown || item.megaMenu;
 
         return (
-          <div key={item.label} className="group relative">
+          <div key={item.label} className="group relative flex shrink-0">
             {item.href ? (
               <Link
                 href={item.href}
@@ -31,17 +28,24 @@ export default function NavMenu() {
                   relative
                   flex
                   items-center
-                  gap-1
+                  gap-0.5
+
+                 px-3
+xl:px-4
+2xl:px-5
+
                   py-2
 
                   whitespace-nowrap
 
-                  text-[15px]
+                  text-[14px]
+                  xl:text-[15px]
+
                   font-semibold
 
-                  text-gray-800
+                  text-slate-800
 
-                  transition-all
+                  transition-colors
                   duration-300
 
                   hover:text-[#D84D95]
@@ -53,13 +57,21 @@ export default function NavMenu() {
                   className="
                     absolute
                     -bottom-[6px]
-                    left-0
+                    left-2
+                    xl:left-3
+                    2xl:left-4
+
                     h-[2px]
                     w-0
+
                     bg-[#D84D95]
+
                     transition-all
                     duration-300
-                    group-hover:w-full
+
+                    group-hover:w-[calc(100%-16px)]
+                    xl:group-hover:w-[calc(100%-24px)]
+                    2xl:group-hover:w-[calc(100%-32px)]
                   "
                 />
               </Link>
@@ -69,17 +81,24 @@ export default function NavMenu() {
                   relative
                   flex
                   items-center
-                  gap-1
+                  gap-0.5
+
+                  px-2
+                  xl:px-3
+                  2xl:px-4
+
                   py-2
 
                   whitespace-nowrap
 
-                  text-[15px]
+                  text-[14px]
+                  xl:text-[15px]
+
                   font-semibold
 
-                  text-gray-800
+                  text-slate-800
 
-                  transition-all
+                  transition-colors
                   duration-300
 
                   hover:text-[#D84D95]
@@ -90,11 +109,16 @@ export default function NavMenu() {
                 {hasDropdown && (
                   <ChevronDown
                     className="
-                      h-4
-                      w-4
+                      h-3.5
+                      w-3.5
+
                       transition-transform
                       duration-300
+
                       group-hover:rotate-180
+
+                      xl:h-4
+                      xl:w-4
                     "
                   />
                 )}
@@ -103,13 +127,21 @@ export default function NavMenu() {
                   className="
                     absolute
                     -bottom-[6px]
-                    left-0
+                    left-2
+                    xl:left-3
+                    2xl:left-4
+
                     h-[2px]
                     w-0
+
                     bg-[#D84D95]
+
                     transition-all
                     duration-300
-                    group-hover:w-full
+
+                    group-hover:w-[calc(100%-16px)]
+                    xl:group-hover:w-[calc(100%-24px)]
+                    2xl:group-hover:w-[calc(100%-32px)]
                   "
                 />
               </button>

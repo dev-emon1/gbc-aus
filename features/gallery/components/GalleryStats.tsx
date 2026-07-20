@@ -12,7 +12,7 @@ export default function GalleryStats() {
   const stats = GALLERY_CONTENT.stats;
 
   return (
-    <section className="relative -mt-16 z-20 pb-20">
+    <section className="relative -mt-10 z-20 pb-24">
       <div className={CONTAINER}>
         <MotionStagger className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {stats.map((item, index) => {

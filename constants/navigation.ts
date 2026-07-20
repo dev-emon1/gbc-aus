@@ -1,7 +1,8 @@
 export type NavigationChild = {
   label: string;
   href: string;
-  badge?: string;
+  description?: string;
+  badge?: "New" | "Popular" | "Guide";
 };
 
 export type NavigationItem = {
@@ -11,16 +12,8 @@ export type NavigationItem = {
   dropdown?: boolean;
   megaMenu?: boolean;
 
-  image?: string;
-
-  title?: string;
-  description?: string;
-
-  ctaButton?: string;
-  ctaHref?: string;
-
-  ctaTitle?: string;
-  ctaDescription?: string;
+  title: string;
+  description: string;
 
   children?: NavigationChild[];
 };
@@ -30,196 +23,133 @@ export const navigation: NavigationItem[] = [
     label: "About GBC",
     dropdown: true,
 
-    image: "/images/navigation/about-gbc.jpg",
-
     title: "About George Brown College",
 
-    description:
-      "Learn about our history, leadership and student opportunities.",
-
-    ctaButton: "Meet an Advisor",
-
-    ctaHref: "/meet-an-advisor",
-
-    ctaTitle: "Need Help Choosing a Course?",
-
-    ctaDescription:
-      "Our advisors are here to help you choose the right pathway.",
+    description: "Learn about our history, leadership and opportunities.",
 
     children: [
       {
         label: "About Us",
         href: "/about",
+        description: "Who we are and what we stand for.",
       },
-
       {
         label: "Why Choose GBC",
         href: "/why-choose-gbc",
+        description: "What makes George Brown College different.",
         badge: "Popular",
       },
-
       {
         label: "Our Team",
         href: "/team",
+        description: "Meet our academic and leadership team.",
       },
-
       {
         label: "Careers",
         href: "/careers",
+        description: "Join our growing team.",
       },
-
       {
         label: "Testimonials",
         href: "/testimonials",
+        description: "Student success stories.",
       },
     ],
   },
 
   {
     label: "Find Your Courses",
-
     megaMenu: true,
+
+    title: "",
+    description: "",
   },
 
   {
     label: "Life In Australia",
-
     dropdown: true,
 
-    image: "/images/navigation/life-australia.jpg",
+    title: "Life in Australia",
 
-    title: "Life In Australia",
-
-    description:
-      "Everything you need to know before and after arriving in Australia.",
-
-    ctaButton: "Articulation Guide",
-
-    ctaHref: "/life-in-australia/articulation",
-
-    ctaTitle: "Prepare Before You Arrive",
-
-    ctaDescription:
-      "Discover articulation, living costs and essential information for international students.",
+    description: "Everything you need before and after arriving in Australia.",
 
     children: [
       {
         label: "Study In Australia",
         href: "/life-in-australia/study-in-australia",
+        description: "Your study journey starts here.",
       },
-
       {
         label: "Articulation",
         href: "/life-in-australia/articulation",
+        description: "Explore academic pathway opportunities.",
         badge: "Guide",
       },
-
       {
         label: "Cost Of Living",
         href: "/life-in-australia/cost-of-living",
-      },
-    ],
-  },
-  {
-    label: "Campus",
-
-    dropdown: true,
-
-    image: "/images/navigation/campus.jpg",
-
-    title: "Campus Experience",
-
-    description:
-      "Explore our facilities, classrooms and vibrant learning environment.",
-
-    ctaButton: "Campus Tour",
-
-    ctaHref: "/campus",
-
-    ctaTitle: "Visit Our Campus",
-
-    ctaDescription: "Book a campus visit and experience GBC before you apply.",
-
-    children: [
-      {
-        label: "Campus Overview",
-
-        href: "/campus",
-      },
-
-      {
-        label: "Facilities",
-
-        href: "/campus/facilities",
-      },
-
-      {
-        label: "Campus Gallery",
-
-        href: "/gallery",
+        description: "Plan your everyday expenses.",
       },
     ],
   },
 
   {
     label: "Student Life",
-
     dropdown: true,
-
-    image: "/images/navigation/student-life.jpg",
 
     title: "Student Life",
 
-    description:
-      "Everything beyond the classroom to help you succeed and enjoy your student journey.",
-
-    ctaButton: "Student Services",
-
-    ctaHref: "/student-life/student-services",
-
-    ctaTitle: "Support Throughout Your Journey",
-
-    ctaDescription:
-      "Academic support, wellbeing services, orientation and student resources all in one place.",
+    description: "Support, wellbeing and experiences beyond the classroom.",
 
     children: [
       {
         label: "Student Services",
         href: "/student-life/student-services",
+        description: "Support throughout your studies.",
       },
-
       {
         label: "Orientation",
         href: "/student-life/orientation",
+        description: "Begin your journey with confidence.",
         badge: "New",
       },
-
       {
         label: "Support & Welfare",
         href: "/student-life/support-welfare",
+        description: "Dedicated support for every student.",
       },
-
       {
         label: "Safety",
         href: "/student-life/safety",
+        description: "Stay informed and protected.",
       },
-
       {
         label: "Events & Workshops",
         href: "/student-life/event-workshops",
+        description: "Learn, connect and grow.",
       },
-
       {
         label: "Student Guide",
         href: "/student-life/student-guide",
+        description: "Everything in one place.",
         badge: "Popular",
       },
     ],
   },
 
   {
-    label: "Contact",
+    label: "Gallery",
+    href: "/gallery",
 
+    title: "",
+    description: "",
+  },
+
+  {
+    label: "Contact",
     href: "/contact",
+
+    title: "",
+    description: "",
   },
 ];

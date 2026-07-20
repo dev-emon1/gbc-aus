@@ -8,7 +8,7 @@ export default function TopBar() {
       <div className={CONTAINER}>
         <div className="flex h-11 items-center justify-between">
           {/* Left */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-5 xl:gap-8">
             <a
               href="mailto:info@georgebrown.nsw.edu.au"
               className="
@@ -18,7 +18,10 @@ export default function TopBar() {
                 hover:text-white
               "
             >
-              <Mail className="h-4 w-4" />
+              <Mail
+                className="h-3.5 w-3.5
+xl:h-4 xl:w-4"
+              />
               <span>info@georgebrown.nsw.edu.au</span>
             </a>
 
@@ -31,13 +34,16 @@ export default function TopBar() {
                 hover:text-white
               "
             >
-              <Phone className="h-4 w-4" />
+              <Phone
+                className="h-3.5 w-3.5
+xl:h-4 xl:w-4"
+              />
               <span>02 9279 4949</span>
             </a>
           </div>
 
           {/* Right */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 xl:gap-3">
             <Link
               href="/apply-now"
               className="
@@ -46,7 +52,7 @@ export default function TopBar() {
                 items-center
                 rounded-full
                 bg-[#B7D531]
-                px-4
+               px-3 xl:px-4
                 text-xs
                 font-semibold
                 tracking-wide

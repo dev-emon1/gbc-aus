@@ -44,7 +44,7 @@ export const COURSE_NAVIGATION: CourseNavigationItem[] = [
   {
     id: "marketing-communications",
     title: "Marketing and Communications",
-    slug: "marketing-communications",
+    slug: "marketing-and-communications",
     programCount: 2,
   },
 

@@ -23,19 +23,19 @@ export default function Header() {
         "
       >
         <div className={CONTAINER}>
-          <div className="grid h-[96px] grid-cols-[240px_1fr_auto] items-center">
+          <div className="grid h-[88px] xl:h-[96px] grid-cols-[190px_1fr_auto] xl:grid-cols-[220px_1fr_auto] 2xl:grid-cols-[240px_1fr_auto] items-center">
             {/* Logo */}
-            <div className="flex items-center">
+            <div className="flex min-w-0 items-center">
               <Logo />
             </div>
 
             {/* Menu */}
-            <div className="flex justify-center">
+            <div className="flex min-w-0 justify-center">
               <NavMenu />
             </div>
 
             {/* Actions */}
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden shrink-0 lg:flex items-center gap-3 xl:gap-4">
               {/* <LanguageSwitcher /> */}
               <InquiryButton />
             </div>

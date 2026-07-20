@@ -8,7 +8,6 @@ import { GRADUATION_2015 } from "./albums/graduation-2015";
 import { CULTURE_DAY_2016 } from "./albums/culture-day-2016";
 import { MELBOURNE_CUP_2016 } from "./albums/melbourne-cup-2016";
 import { GRADUATION_2016 } from "./albums/graduation-2016";
-import { CULTURE_DAY_2017 } from "./albums/culture-day-2017";
 import { MELBOURNE_CUP_2017 } from "./albums/melbourne-cup-2017";
 import { SOCCER_DAY_2017 } from "./albums/soccer-day-2017";
 
@@ -49,23 +48,6 @@ export const GALLERY_HERO: PageHeroData = {
 };
 
 export const GALLERY_CONTENT: GalleryContent = {
-  featuredAlbum: {
-    id: "culture-day-2017",
-    title: "Culture Day 2017",
-    slug: "culture-day-2017",
-    year: 2017,
-    category: "Culture",
-    description:
-      "One of George Brown College's most vibrant annual celebrations showcasing cultures from around the world.",
-    coverImage: CULTURE_DAY_2017[0].image,
-    coverAlt: CULTURE_DAY_2017[0].alt,
-    photosCount: CULTURE_DAY_2017.length,
-    featured: true,
-    eventDate: "2017",
-    location: "George Brown College",
-    photos: CULTURE_DAY_2017,
-  },
-
   stats: [
     {
       value: "8",
@@ -164,23 +146,6 @@ export const GALLERY_CONTENT: GalleryContent = {
       eventDate: "2016",
       location: "George Brown College",
       photos: GRADUATION_2016,
-    },
-
-    {
-      id: "culture-day-2017",
-      title: "Culture Day 2017",
-      slug: "culture-day-2017",
-      year: 2017,
-      category: "Culture",
-      description:
-        "The biggest Culture Day celebration featuring international cuisine, performances and student participation.",
-      coverImage: CULTURE_DAY_2017[0].image,
-      coverAlt: CULTURE_DAY_2017[0].alt,
-      photosCount: CULTURE_DAY_2017.length,
-      featured: true,
-      eventDate: "2017",
-      location: "George Brown College",
-      photos: CULTURE_DAY_2017,
     },
 
     {

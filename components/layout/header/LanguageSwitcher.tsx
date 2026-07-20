@@ -29,7 +29,10 @@ export default function LanguageSwitcher() {
         {/* <span className="text-base">🇬🇧</span> */}
 
         <span className="font-semibold">EN</span>
-        <ChevronDown className="h-4 w-4" />
+        <ChevronDown
+          className="h-3.5 w-3.5
+xl:h-4 xl:w-4"
+        />
       </DropdownMenuTrigger>
 
       <DropdownMenuContent align="end" className="w-52">

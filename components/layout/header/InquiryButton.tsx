@@ -11,7 +11,7 @@ export default function InquiryButton() {
         justify-center
         rounded-full
         bg-[#D84D95]
-        px-6
+       px-4 xl:px-6
         text-sm
         font-semibold
         text-white
@@ -23,7 +23,11 @@ export default function InquiryButton() {
         hover:shadow-xl
       "
     >
-      Start Your Journey
+      <>
+        <span className="xl:hidden">Get Started</span>
+
+        <span className="hidden xl:inline">Start Your Journey</span>
+      </>
     </Link>
   );
 }

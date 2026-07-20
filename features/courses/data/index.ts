@@ -9,7 +9,7 @@ import { HUMAN_RESOURCES } from "./human-resource";
 import { INFORMATION_TECHNOLOGY } from "./information-technology";
 import { LEADERSHIP_AND_MANAGEMENT } from "./leadership-management";
 import { MANAGEMENT } from "./management";
-import { MARKETING_AND_COMMUNICATIONS } from "./marketing-communication";
+import { MARKETING_AND_COMMUNICATIONS } from "./marketing-communications";
 import { PROJECT_MANAGEMENT } from "./project-management/index.";
 import { TRADE_COURSES } from "./trade-courses";
 

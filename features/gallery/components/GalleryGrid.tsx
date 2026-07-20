@@ -70,22 +70,16 @@ export default function GalleryGrid({ activeCategory }: GalleryGridProps) {
               <MotionReveal
                 key={album.id}
                 delay={index * 0.06}
-                className={
-                  index === 0 ? "md:col-span-2 xl:row-span-2" : undefined
-                }
+                className="h-full"
               >
                 <Link
-                  href={`/student-life/gallery/${album.slug}`}
+                  href={`/gallery/${album.slug}`}
                   className="group block h-full"
                 >
                   <article className="overflow-hidden rounded-[36px] border border-slate-200 bg-white shadow-[0_25px_80px_rgba(15,23,42,.07)] transition-all duration-500 hover:-translate-y-2 hover:border-[#D84D95]/30 hover:shadow-[0_45px_120px_rgba(15,23,42,.14)]">
                     {/* Image */}
 
-                    <div
-                      className={`relative overflow-hidden ${
-                        index === 0 ? "aspect-[16/10]" : "aspect-[16/11]"
-                      }`}
-                    >
+                    <div className="relative aspect-[16/10] overflow-hidden">
                       <Image
                         src={album.coverImage}
                         alt={album.title}

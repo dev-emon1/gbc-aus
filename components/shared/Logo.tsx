@@ -12,9 +12,7 @@ export default function Logo() {
         priority
         className="
     h-auto
-    w-[170px]
-    xl:w-[190px]
-    2xl:w-[220px]
+   w-[150px] xl:w-[170px] 2xl:w-[180px]
   "
       />
     </Link>
