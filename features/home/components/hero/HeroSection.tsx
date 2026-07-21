@@ -82,7 +82,7 @@ export default function HeroSection() {
             </MotionReveal>
 
             <MotionReveal animateOnMount delay={0.15}>
-              <h1 className="mt-6 text-[52px] font-bold leading-[0.95] tracking-tight text-slate-900 md:text-6xl lg:text-7xl">
+              <h1 className="mt-6 text-4xl sm:text-[52px] font-bold leading-[0.95] tracking-tight text-slate-900 md:text-6xl lg:text-7xl">
                 Build Your Future
                 <br />
                 <span className="text-[#D84D95]">With Confidence</span>
@@ -90,24 +90,24 @@ export default function HeroSection() {
             </MotionReveal>
 
             <MotionReveal animateOnMount delay={0.3}>
-              <p className="mt-8 max-w-xl text-lg leading-relaxed text-slate-600">
+              <p className="mt-6 sm:mt-8 max-w-xl text-base sm:text-lg leading-relaxed text-slate-600">
                 Industry focused training, flexible learning and career pathways
                 designed for modern students.
               </p>
             </MotionReveal>
 
             <MotionReveal animateOnMount delay={0.45}>
-              <div className="mt-10 flex flex-wrap gap-4">
+              <div className="mt-8 sm:mt-10 flex flex-wrap gap-4">
                 <Link
                   href="/courses"
-                  className="rounded-full bg-[#D84D95] px-8 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(216,77,149,0.35)]"
+                  className="rounded-full bg-[#D84D95] px-6 py-3 sm:px-8 sm:py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(216,77,149,0.35)]"
                 >
                   Explore Courses
                 </Link>
 
                 <Link
                   href="/meet-an-advisor"
-                  className="rounded-full border-2 border-slate-300 px-8 py-4 font-semibold text-slate-900 transition-all duration-300 hover:border-[#D84D95] hover:text-[#D84D95]"
+                  className="rounded-full border-2 border-slate-300 px-6 py-3 sm:px-8 sm:py-4 font-semibold text-slate-900 transition-all duration-300 hover:border-[#D84D95] hover:text-[#D84D95]"
                 >
                   Book Consultation
                 </Link>
@@ -119,8 +119,7 @@ export default function HeroSection() {
             </MotionReveal>
           </div>
 
-          {/* Right Side */}
-          {/* Right Side */}
+          {/* Right Side - Desktop Image */}
           <MotionReveal animateOnMount delay={0.75} variant={heroImage}>
             <div className="relative hidden lg:block">
               <div className="relative h-[650px] overflow-hidden rounded-[48px] shadow-[0_40px_120px_rgba(0,0,0,0.12)]">
@@ -196,13 +195,32 @@ export default function HeroSection() {
           </MotionReveal>
 
           {/* Mobile Image */}
-          <div className="relative lg:hidden mt-8">
-            <div className="w-[500px]">
-              <img
+          <div className="relative lg:hidden mt-8 w-full">
+            <div className="relative w-full h-[280px] sm:h-[380px] overflow-hidden rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+              <Image
                 src="/images/hero/hero1.jpg"
-                alt="hero"
-                className="w-full border border-red-500"
+                alt="George Brown College Students"
+                fill
+                priority
+                className="object-cover"
               />
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+
+              {/* Floating Badge */}
+              <div className="absolute top-4 right-4 rounded-full bg-white px-4 py-2 shadow-xl">
+                <span className="text-xs font-semibold text-[#D84D95]">
+                  Sydney Campus
+                </span>
+              </div>
+
+              {/* Floating Students */}
+              <div className="absolute top-4 left-4 rounded-full bg-white/95 px-4 py-2 shadow-xl">
+                <span className="text-xs font-semibold text-slate-900">
+                  CRICOS Registered
+                </span>
+              </div>
             </div>
           </div>
         </div>

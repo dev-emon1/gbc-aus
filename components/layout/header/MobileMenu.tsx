@@ -15,11 +15,13 @@ import {
 } from "@/components/ui/accordion";
 
 import { mobileNavigation } from "@/constants/mobile-navigation";
+import { useState } from "react";
 
 export default function MobileMenu() {
+  const [open, setOpen] = useState(false);
   return (
     <div className="lg:hidden">
-      <Sheet>
+      <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger asChild>
           <button
             className="
@@ -124,6 +126,7 @@ export default function MobileMenu() {
                             <Link
                               key={subItem.label}
                               href={subItem.href}
+                              onClick={() => setOpen(false)}
                               className="
                                 flex
                                 items-center
@@ -163,6 +166,7 @@ xl:h-4 xl:w-4"
                   <Link
                     key={item.label}
                     href={item.href!}
+                    onClick={() => setOpen(false)}
                     className="
                       flex
                       items-center
@@ -270,6 +274,7 @@ xl:h-4 xl:w-4"
               <div className="space-y-3">
                 <Link
                   href="/apply-now"
+                  onClick={() => setOpen(false)}
                   className="
                     flex
                     h-12
@@ -289,7 +294,9 @@ xl:h-4 xl:w-4"
                 </Link>
 
                 <Link
-                  href="/rto-manager"
+                  href="https://gbc.rtomanager.com.au/"
+                  target="_blank"
+                  onClick={() => setOpen(false)}
                   className="
                     flex
                     h-12
@@ -312,7 +319,8 @@ xl:h-4 xl:w-4"
                 </Link>
 
                 <Link
-                  href="/e-learning"
+                  href="https://elearning.georgebrown.nsw.edu.au"
+                  onClick={() => setOpen(false)}
                   className="
                     flex
                     h-12
@@ -339,6 +347,7 @@ xl:h-4 xl:w-4"
             {/* CTA */}
             <Link
               href="/meet-an-advisor"
+              onClick={() => setOpen(false)}
               className="
                 mt-8
 
