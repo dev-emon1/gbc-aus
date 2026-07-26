@@ -7,8 +7,10 @@ import { MotionHover, MotionReveal } from "@/components/shared/animations";
 type Props = {
   title: string;
   description: string;
-  buttonText: string;
-  file: string;
+  downloads: {
+    label: string;
+    file: string;
+  }[];
   coverTitle: string;
   coverYear?: string;
 };
@@ -16,8 +18,7 @@ type Props = {
 export default function ResourceCard({
   title,
   description,
-  buttonText,
-  file,
+  downloads,
   coverTitle,
   coverYear = "2026",
 }: Props) {
@@ -52,12 +53,18 @@ export default function ResourceCard({
               </MotionReveal>
 
               <MotionReveal delay={0.2}>
-                <Link
-                  href={file}
-                  className="mt-8 inline-flex rounded-full bg-[#D84D95] px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_20px_40px_rgba(216,77,149,0.35)]"
-                >
-                  {buttonText}
-                </Link>
+                <div className="mt-8 flex flex-col gap-3">
+                  {downloads.map((item) => (
+                    <Link
+                      key={item.file}
+                      href={item.file}
+                      target="_blank"
+                      className="inline-flex w-fit rounded-full bg-[#D84D95] px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_20px_40px_rgba(216,77,149,0.35)]"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
               </MotionReveal>
             </div>
 

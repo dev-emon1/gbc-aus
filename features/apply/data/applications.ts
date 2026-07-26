@@ -13,7 +13,7 @@ export const APPLICATION_FORMS: ApplicationForm[] = [
     description:
       "For domestic and international applicants aged 18 years or above applying for George Brown College programs.",
 
-    file: "/pdf/Application-for-Enrollment.pdf",
+    file: "/pdf/Application-for-Enrolment-V.27-16.02.2026_2.pdf",
 
     icon: GraduationCap,
     pages: "2",
@@ -29,7 +29,7 @@ export const APPLICATION_FORMS: ApplicationForm[] = [
     description:
       "For applicants under the age of 18 who require the Under 18 enrolment application form.",
 
-    file: "/pdf/U18-Application-for-Enrollment-v1-2023.pdf",
+    file: "/pdf/U18-Application-for-Enrolment-v1-2023.pdf",
 
     icon: FileText,
     pages: "2",
