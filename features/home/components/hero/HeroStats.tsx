@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 const stats = [
   {
-    end: 8000,
+    end: 2000,
     prefix: "",
     suffix: "+",
     label: "Students",
@@ -16,7 +16,7 @@ const stats = [
     label: "Satisfaction",
   },
   {
-    end: 50,
+    end: 30,
     suffix: "+",
     label: "Courses",
   },

@@ -125,7 +125,7 @@ export default function HeroSection() {
               <div className="relative h-[650px] overflow-hidden rounded-[48px] shadow-[0_40px_120px_rgba(0,0,0,0.12)]">
                 <MotionHover scale={1.01} y={-4}>
                   <Image
-                    src="/images/hero/hero1.jpg"
+                    src="/images/hero/hero3.jpg"
                     alt="George Brown College Students"
                     fill
                     priority
